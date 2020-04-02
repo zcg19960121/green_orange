@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="green_orange_pojo" />
+        <module name="green_orange_common_service" />
+        <module name="green_orange_service_goods" />
+        <module name="green_orange_interface" />
+        <module name="green_orange_common_web" />
+        <module name="green_orange_web_manager" />
+        <module name="green_orange_common" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
