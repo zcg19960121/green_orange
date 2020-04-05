@@ -1,2 +1,11 @@
 # Default ignored files
 /workspace.xml
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# ignore Maven generated target folders
+target
