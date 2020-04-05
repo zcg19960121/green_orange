@@ -17,7 +17,6 @@
         <module>green_orange_service_goods</module>
         <module>green_orange_web_manager</module>
     </modules>
-
     <properties>
         <junit.version>4.12</junit.version>
         <spring.version>5.0.5.RELEASE</spring.version>

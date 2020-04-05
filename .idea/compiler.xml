@@ -12,7 +12,6 @@
         <module name="green_orange_interface" />
         <module name="green_orange_common_web" />
         <module name="green_orange_web_manager" />
-        <module name="green_orange_common" />
       </profile>
     </annotationProcessing>
   </component>
