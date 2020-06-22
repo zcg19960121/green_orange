@@ -36,5 +36,10 @@ public class BrandController {
         return brandService.findPage(searchMap, page, size);
     }
 
+    @GetMapping("/findById")
+    public Brand findById(int id) {
+        return brandService.findById(id);
+    }
+
 
 }
