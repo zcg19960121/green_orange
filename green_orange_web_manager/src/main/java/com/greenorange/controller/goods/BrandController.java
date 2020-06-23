@@ -2,6 +2,7 @@ package com.greenorange.controller.goods;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.greenorange.pojo.entity.PageResult;
+import com.greenorange.pojo.entity.Result;
 import com.greenorange.pojo.goods.Brand;
 import com.greenorange.service.goods.BrandService;
 import org.springframework.web.bind.annotation.*;
@@ -37,8 +38,26 @@ public class BrandController {
     }
 
     @GetMapping("/findById")
-    public Brand findById(int id) {
+    public Brand findById(Integer id) {
         return brandService.findById(id);
+    }
+
+    @PostMapping("/add")
+    public Result add(@RequestBody Brand brand) {
+        brandService.add(brand);
+        return new Result();
+    }
+
+    @PostMapping("/update")
+    public Result update(@RequestBody Brand brand) {
+        brandService.update(brand);
+        return new Result();
+    }
+
+    @GetMapping("/delete")
+    public Result delete(Integer id) {
+        brandService.delete(id);
+        return new Result();
     }
 
 

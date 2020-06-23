@@ -15,5 +15,11 @@ public interface BrandService {
 
     public PageResult<Brand> findPage(Map<String, Object> searchMap, int page, int size);
 
-    public Brand findById(int id);
+    public Brand findById(Integer id);
+
+    public void add(Brand brand);
+
+    public void update(Brand brand);
+
+    public void delete(Integer id);
 }

@@ -46,8 +46,23 @@ public class BrandServiceImpl implements BrandService {
     }
 
     @Override
-    public Brand findById(int id) {
+    public Brand findById(Integer id) {
         return brandMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public void add(Brand brand) {
+        brandMapper.insert(brand);
+    }
+
+    @Override
+    public void update(Brand brand) {
+        brandMapper.updateByPrimaryKeySelective(brand);
+    }
+
+    @Override
+    public void delete(Integer id) {
+        brandMapper.deleteByPrimaryKey(id);
     }
 
     private Example createExample(Map<String, Object> searchMap) {
